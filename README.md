@@ -95,13 +95,13 @@ La aplicación incorpora una funcionalidad de cambio de tema entre un **modo cla
 
 | Nivel 1: Ecosistemas | Nivel 2: Hábitats | Nivel 3: Animales |
 | :------------------: | :---------------: | :---------------: |
-| ![Modo Claro - Ecosistemas](URL_CAPTURA_NIVEL1_CLARO) | ![Modo Claro - Hábitats](URL_CAPTURA_NIVEL2_CLARO) | ![Modo Claro - Animales](URL_CAPTURA_NIVEL3_CLARO) |
+| ![Modo Claro - Ecosistemas](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/10.jpg) | ![Modo Claro - Hábitats](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/11.jpg) | ![Modo Claro - Animales](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/12.jpg) |
 
 #### Modo Oscuro
 
 | Nivel 1: Ecosistemas | Nivel 2: Hábitats | Nivel 3: Animales |
 | :------------------: | :---------------: | :---------------: |
-| ![Modo Oscuro - Ecosistemas](URL_CAPTURA_NIVEL1_OSCURO) | ![Modo Oscuro - Hábitats](URL_CAPTURA_NIVEL2_OSCURO) | ![Modo Oscuro - Animales](URL_CAPTURA_NIVEL3_OSCURO) |
+| ![Modo Oscuro - Ecosistemas](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/13.jpg) | ![Modo Oscuro - Hábitats](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/14.jpg) | ![Modo Oscuro - Animales](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/15.jpg) |
 
 ---
 *Ruiz Martinez Erick*
