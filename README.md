@@ -26,8 +26,9 @@ La estructura de la aplicación es la siguiente:
 
 ## 📸 Capturas de Pantalla
 
-| Nivel 1: Ecosistemas                                       | Nivel 2: Hábit
-
+| Nivel 1: Ecosistemas                                       | Nivel 2: Hábitats                                        | Nivel 3: Animales                                       |
+| :---------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------: |
+| ![Pantalla principal de Ecosistemas] (https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/1.jpg?raw=true) | *[Pega aquí tu captura de la selección de hábitats]* | *[Pega aquí tu captura de la galería de animales]* |
 ## 🛠️ Instalación y Ejecución
 
 Para clonar y ejecutar este proyecto localmente, seguir estos pasos:
