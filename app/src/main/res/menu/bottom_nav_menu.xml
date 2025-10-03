@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_terrestrial"
+        android:icon="@android:drawable/ic_dialog_map" android:title="Terrestre" />
+    <item
+        android:id="@+id/nav_aquatic"
+        android:icon="@android:drawable/ic_menu_gallery" android:title="Acuático" />
+    <item
+        android:id="@+id/nav_mixed"
+        android:icon="@android:drawable/ic_menu_sort_by_size" android:title="Mixto" />
+</menu>

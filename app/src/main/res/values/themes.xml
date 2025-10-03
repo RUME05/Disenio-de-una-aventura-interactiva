@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Base de la App -->
+    <style name="Theme.Tarea2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Atributos comunes si los hubiera -->
+    </style>
+
+    <!-- TEMA CLARO -->
+    <style name="Theme.App.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/light_background</item>
+        <item name="android:textColor">@color/light_text</item>
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorSurface">@color/light_card</item>
+    </style>
+
+    <!-- TEMA OSCURO -->
+    <style name="Theme.App.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorSurface">@color/dark_card</item>
+    </style>
+</resources>

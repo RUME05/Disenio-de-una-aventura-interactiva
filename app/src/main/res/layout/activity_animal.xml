@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/animal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/animal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animales del Hábitat"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/animal_image_1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bear" /> <TextView
+    android:id="@+id/animal_name_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Oso" />
+
+    <ImageView
+        android:id="@+id/animal_image_2"  android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_deer" />
+    <TextView
+    android:id="@+id/animal_name_2"  android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ciervo" />
+
+    <ImageView
+        android:id="@+id/animal_image_3"  android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_wolf" />
+    <TextView
+        android:id="@+id/animal_name_3"  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lobo Gris" />
+
+    <ImageView
+        android:id="@+id/animal_image_4"  android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_fox" />
+    <TextView
+        android:id="@+id/animal_name_4"  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zorro Rojo" />
+
+    <ImageView
+        android:id="@+id/animal_image_5"  android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_owl" />
+    <TextView
+        android:id="@+id/animal_name_5"  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buho" />
+
+</LinearLayout>
