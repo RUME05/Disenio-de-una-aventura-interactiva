@@ -28,7 +28,7 @@ La estructura de la aplicación es la siguiente:
 
 | Nivel 1: Ecosistemas                                       | Nivel 2: Hábitats                                        | Nivel 3: Animales                                       |
 | :---------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------: |
-| ![Pantalla principal de Ecosistemas] (https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/1.jpg?raw=true) | *[Pega aquí tu captura de la selección de hábitats]* | *[Pega aquí tu captura de la galería de animales]* |
+| ![Pantalla principal de Ecosistemas](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/1.jpg) | ![Pantalla Habitats](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/6.jpg)  | ![Pantalla lista de animales](https://github.com/RUME05/Disenio-de-una-aventura-interactiva/blob/master/9.jpg) |
 ## 🛠️ Instalación y Ejecución
 
 Para clonar y ejecutar este proyecto localmente, seguir estos pasos:
@@ -70,6 +70,38 @@ Durante el desarrollo, se presentaron varios desafíos técnicos que requirieron
 | **Errores de Compilación** | Aparecían constantemente errores de `Unresolved Reference` para clases del sistema (`Intent`, `View`), recursos (`R`) y clases del proyecto (Fragments). | La causa era la falta de las sentencias `import` adecuadas. Se solucionó revisando cada archivo y utilizando la herramienta de Android Studio (`Alt + Enter`) para importar automáticamente las dependencias necesarias.                               |
 | **Crash al Iniciar la App** | La aplicación se instalaba pero se cerraba de inmediato, mostrando un error `Fatal_exception` para `MainActivity`.                     | El problema era una desincronización entre el `package name` de los archivos Kotlin. La solución final fue sincronizar correctamente los nombres de los `packages`. |
 | **Errores de Formato XML** | El build fallaba con errores de `XML Parsing`, indicando que una etiqueta no estaba cerrada o se encontraba fuera del elemento raíz.                    | Se realizó una revisión manual de los archivos `.xml`. La solución fue corregir la sintaxis, asegurando que todas las vistas estuvieran correctamente y que cada etiqueta se cerrara adecuadamente.                |
+
+---
+## ⚙️ Implementación de Temas con SharedPreferences
+
+La aplicación incorpora una funcionalidad de cambio de tema entre un **modo claro** y un **modo oscuro**, persistiendo la elección del usuario a través de `SharedPreferences`.
+
+### Descripción de la Implementación
+1.  **Definición de Temas:** Se crearon dos estilos (`Theme.App.Light` y `Theme.App.Dark`) en `res/values/themes.xml`, cada uno apuntando a un conjunto de colores específicos para su tema definidos en `res/values/colors.xml`.
+2.  **`ThemeManager`:** Se desarrolló un `object` Kotlin (`ThemeManager.kt`) para guardar y cargar la preferencia del tema en `SharedPreferences`. Este objeto también se encarga de aplicar el tema adecuado a cada `Activity`.
+3.  **Aplicación Global:** En el método `onCreate()` de cada `Activity` (`MainActivity`, `HabitatActivity`, `AnimalActivity`), se llama a `ThemeManager.applyTheme(this)` **antes** de `setContentView()` para asegurar que el tema correcto se aplique tan pronto como la `Activity` se inicie.
+4.  **Selector de Tema:** Se añadió un `SwitchMaterial` en la `MainActivity` que permite al usuario alternar entre los temas. Al cambiar el estado del `Switch`, se actualiza la preferencia en `SharedPreferences` y se llama a `recreate()` en la `Activity` para que los cambios se visualicen instantáneamente.
+
+### Cómo Usar el Selector de Tema
+1.  Iniciar la aplicación.
+2.  En la pantalla principal (`MainActivity`), se vera un **interruptor (Switch)** en la esquina superior derecha con el texto "Modo Oscuro" al lado.
+3.  Hacer clic en el `Switch` para activarlo o desactivarlo.
+4.  La `Activity` se reiniciará automáticamente y la aplicación cambiará a la apariencia del modo oscuro o claro, según la selección.
+5.  La aplicación recordará la última elección de tema cada vez que se cierres y se vuelva a abrir.
+
+### Capturas de Pantalla (Modos Claro y Oscuro)
+
+#### Modo Claro
+
+| Nivel 1: Ecosistemas | Nivel 2: Hábitats | Nivel 3: Animales |
+| :------------------: | :---------------: | :---------------: |
+| ![Modo Claro - Ecosistemas](URL_CAPTURA_NIVEL1_CLARO) | ![Modo Claro - Hábitats](URL_CAPTURA_NIVEL2_CLARO) | ![Modo Claro - Animales](URL_CAPTURA_NIVEL3_CLARO) |
+
+#### Modo Oscuro
+
+| Nivel 1: Ecosistemas | Nivel 2: Hábitats | Nivel 3: Animales |
+| :------------------: | :---------------: | :---------------: |
+| ![Modo Oscuro - Ecosistemas](URL_CAPTURA_NIVEL1_OSCURO) | ![Modo Oscuro - Hábitats](URL_CAPTURA_NIVEL2_OSCURO) | ![Modo Oscuro - Animales](URL_CAPTURA_NIVEL3_OSCURO) |
 
 ---
 *Ruiz Martinez Erick*
