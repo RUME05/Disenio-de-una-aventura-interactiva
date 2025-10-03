@@ -38,7 +38,7 @@ Clonar el Repositorio
 
 Bash
 
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+git clone https://github.com/RUME05/Disenio-de-una-aventura-interactiva.git
 Abrir en Android Studio
 
 Abre Android Studio.
